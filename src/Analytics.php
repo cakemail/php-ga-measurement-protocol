@@ -549,4 +549,14 @@ class Analytics
 
         throw new \BadMethodCallException('Method ' . $methodName . ' not defined for Analytics class');
     }
+
+    /**
+     * Returns an array containing all the parameters with value
+     *
+     * @return array
+     */
+    public function getParameterValue($param)
+    {
+        return $this->singleParameters[$param]->getValue();
+    }
 }
