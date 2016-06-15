@@ -489,6 +489,16 @@ class Analytics
     }
 
     /**
+     * Returns an array containing all the parameters with value
+     *
+     * @return array
+     */
+    public function getParameterValue($param)
+    {
+        return $this->singleParameters[$param]->getValue();
+    }
+
+    /**
      * Gets the index value from the arguments.
      *
      * @param $methodArguments
